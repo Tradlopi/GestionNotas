@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>Login</title>
+  <meta charset="UTF-8">
+    <!-- <script src="SESION06.js"></script>  -->
+    <title>Gestion de usuarios</title>
+    <link rel="stylesheet" type="text/css" href="../miEstilo.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome.min.css">
+  </head>
+  <body class="background text-center">
+
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+          <br>
+          <img class="mb-4" src="../img/univalle.jpg" alt="" width="100" height="150">
+    <h1>Gestión, modificación y búsqueda de usuarios</h1>
+    <br><br>
+
+    <div class="row">
+  
+      <div class="col-md-6" style="border-style:solid; border-color:darkred">
+        <br>
+        <h3>      Datos del usuario    </h3>
+        <br><br>
+        <form
+        action=""
+        method="get"
+        name="formRegistro"
+        onSubmit="validar_formulario();"
+      >
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Nombre: </label>
+        <input type="text" class="form-control" id="nombre" name="nombre" />
+      </div>
+      
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Apellido: </label>
+        <input type="text" class="form-control" id="apellido" name="apellido"/>
+      </div>
+      
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Documento: </label>
+        <input type="text" class="form-control" id="documento" name="documento"/>
+      </div>
+      
+      <div class="form-group"> 
+        <label>Tipo de usuario: </label>
+          <select name="tipoUsuario" id="lang">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Docente">Docente</option>
+          </select>
+      </div>
+
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Código: </label>
+        <input type="text" class="form-control" id="codigo" name="codigo"/>
+      </div>
+
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Teléfono: </label>
+        <input type="text" class="form-control" id="telefono" name="telefono"/>
+      </div>
+    
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Correo institucional: </label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Correo institucional" required="" autofocus="">
+      </div>
+    
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Acudiente: </label>
+        <input type="text" class="form-control" id="acudiente" name="acudiente"/>
+      </div>
+    
+      <div class="form-group"> 
+        <label for="full_name_id" class="control-label">Teléfono Acudiente: </label>
+        <input type="text" class="form-control" id="telefonoAcudiente" name="telefonoAcudiente"/>
+      </div>
+
+      <a
+      action=""
+      method="get"
+      name="formRegistro"
+      onSubmit="validar_formulario();"
+    >
+    </a>
+    </div>
+    <div class="col-md-1">
+    
+    </div>
+    
+    <div class="col-md-5" style="border-style:solid; border-color:darkred">
+      <br><br><br><br><br><br>
+
+    <label>Buscar por código: <input type="text" id="nombre" name="nombre" /></label>
+    <a href="---">
+      <input type="button" value="Buscar" class="btn btn-success">
+  </a>
+
+  <br><br><br><br><br>
+
+  <div class="form-group">
+
+    <input type="button" value="Editar" class="btn btn-success">
+  
+    <br><br>
+  
+    <input type="button" value="Eliminar" class="btn btn-danger">
+  
+    <br><br>
+
+    <input type="button" value="Registrar" class="btn btn-primary">
+     
+    <br><br>
+      
+    <input type="button" value="Menú Login" class="btn btn-link">
+          
+  </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+        
+    
+  </body>
+</html>
